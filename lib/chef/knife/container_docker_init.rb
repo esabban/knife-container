@@ -189,8 +189,8 @@ class Chef
       end
 
       def download_and_tag_base_image
-        shell_out("docker pull #{config[:base_image]}")
-        shell_out("docker tag #{config[:base_image]} #{@name_args[0]}")
+        shell_out("sudo docker pull #{config[:base_image]}")
+        shell_out("sudo docker tag #{config[:base_image]} #{@name_args[0]}")
       end
 
       def eval_current_system

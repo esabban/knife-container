@@ -119,7 +119,7 @@ class Chef
       end
 
       def docker_build_command
-        "docker build -t #{@name_args[0]} #{docker_context}"
+        "sudo docker build -t #{@name_args[0]} #{docker_context}"
       end
 
       def run_command(cmd)
